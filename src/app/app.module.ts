@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeControllerComponent } from './home-controller/home-controller.component';
 import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { SnippetCardComponent } from './snippet-card/snippet-card.component';
+import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeControllerComponent,
     LanguageBarComponent,
-    SnippetCardComponent
+    SnippetCardComponent,
+    SnippetAdderComponent
   ],
   imports: [
     BrowserModule,
