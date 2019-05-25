@@ -1,3 +1,12 @@
-<p>
-  home-controller works!
-</p>
+<div>
+  <app-language-bar></app-language-bar>
+</div>
+<div class="card-container" fxLayout="row wrap"           fxLayoutAlign.xs="flex-start"
+  fxLayoutGap="2em" fxLayoutGap.xs="0">
+  <div>
+    <app-snippet-adder></app-snippet-adder>
+  </div>
+  <div *ngFor="let snippet of snippets">
+    <app-snippet-card></app-snippet-card>
+  </div>
+</div>

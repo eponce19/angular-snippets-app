@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Snippet } from '../../models/snippet';
+import { Languages } from '../../models/temp-languages.enum';
 
 @Component({
   selector: 'app-home-controller',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeControllerComponent implements OnInit {
 
+  snippets = [
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript),
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript),
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript),
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript),
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript),
+    new Snippet('my snippet', 'this is a test', 'let this is this;', Languages.typescript)
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }

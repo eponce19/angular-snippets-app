@@ -3,4 +3,23 @@
     <i class="fa fa-plus-circle fa-5x"></i>
   </div>
 </div>
-<app-modal-window></app-modal-window>
+<app-modal-window>
+  <form fxLayout="column" fxLayoutAlign="space-around stretch"
+  fxLayoutGap="0.5em" #snippetForm="ngForm" (ngSubmit)="addSnippet()">
+    <div fxFlex fxFlexOrder="1">
+      <label for="name">Name</label>
+      <input  type="text" class="form-control" id="name" required>
+    </div>
+    <div fxFlex fxFlexOrder="2">
+      <label for="desc">Description</label>
+      <input  type="text" class="form-control" id="desc" required>
+    </div>
+    <div fxFlex fxFlexOrder="3">
+      <label for="snippet">Code Snippet</label>
+      <input  type="text" class="form-control" id="code" required>
+    </div>
+    <div fxLayoutAlign="end center" fxFlexOrder="4">
+      <button type="submit">SAVE</button>
+    </div>
+  </form>
+</app-modal-window>

@@ -12,4 +12,8 @@ export class SnippetAdderComponent implements OnInit {
   ngOnInit() {
   }
 
+  addSnippet = () => {
+    const showing = true;
+  }
+
 }

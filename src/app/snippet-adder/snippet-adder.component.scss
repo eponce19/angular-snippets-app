@@ -1,5 +1,21 @@
 @import "../../styles/styles.scss";
 
+textarea, input{
+  padding: 0.5em;
+  font-family: $font-family-body;
+  color: $color-primary;
+  background-color: $color-base;
+  @include border-radius(0.5em);
+}
+
+button{
+  padding: 1em;
+  color: $color-base;
+  border: none;
+  background: none;
+  font-size: $font-size-lg;
+}
+
 .card-body{
   height: 250px;
   width: 250px;

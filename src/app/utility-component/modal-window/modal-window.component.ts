@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalWindowComponent implements OnInit {
 
+  showing = false;
+
   constructor() { }
 
   ngOnInit() {

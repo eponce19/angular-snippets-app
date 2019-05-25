@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { SnippetCardComponent } from './snippet-card/snippet-card.component';
 import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
 
 import { UtilityComponentModule } from './utility-component/utility-component.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { UtilityComponentModule } from './utility-component/utility-component.mo
     BrowserModule,
     FlexLayoutModule,
     AppRoutingModule,
-    UtilityComponentModule
+    UtilityComponentModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
