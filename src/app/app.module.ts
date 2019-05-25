@@ -9,6 +9,8 @@ import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { SnippetCardComponent } from './snippet-card/snippet-card.component';
 import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
 
+import { UtilityComponentModule } from './utility-component/utility-component.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UtilityComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
