@@ -8,11 +8,11 @@
   background: linear-gradient(225deg, transparent 30px, $color 30px);
 }
 
-@mixin card-box-shadow(){
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 2px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 2px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 2px;
-  box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 2px;
+@mixin box-shadow($settings){
+  -webkit-box-shadow: $settings;
+  -o-box-shadow: $settings;
+  -moz-box-shadow: $settings;
+  box-shadow: $settings;
 }
 
 @mixin border-radius($size){

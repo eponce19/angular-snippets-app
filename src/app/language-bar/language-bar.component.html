@@ -1,3 +1,10 @@
-<p>
-  language-bar works!
-</p>
+<nav fxLayout="row" fxLayoutAlign="end center" [fxShow.xs]="false" id="bar-container">
+  <div id="language-container" fxFlex="90" fxLayout="row"
+  fxLayoutAlign="start space-evenly" fxLayoutGap="1em">
+    <h2 *ngIf="languages.count === 0">Start By Choosing a Language</h2>
+    <h2 *ngFor="let lang of languages">{{lang}}</h2>
+  </div>
+  <a fxFlex="10">
+    <i class="fas fa-plus-circle fa-2x"></i>
+  </a>
+</nav>

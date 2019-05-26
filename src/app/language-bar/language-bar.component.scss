@@ -1,0 +1,23 @@
+@import '../../styles/styles';
+
+h2, a{
+  cursor: pointer;
+}
+
+h2 {
+  color: $color-base;
+  font-family: $font-family-header;
+  font-size: $font-size-lg;
+  padding: 1em;
+}
+
+#bar-container{
+  background-color: $color-primary;
+  padding: 0 2em;
+  @include box-shadow(rgba(0, 0, 0, 0.1) 0 5px 2px 2px);
+}
+
+#language-container{
+  margin: 0 10px;
+  overflow: auto;
+}
