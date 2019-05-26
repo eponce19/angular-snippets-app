@@ -5,6 +5,7 @@ textarea, input{
   font-family: $font-family-body;
   color: $color-primary;
   background-color: $color-base;
+  font-size: $font-size-reg;
   @include border-radius(0.5em);
 }
 
