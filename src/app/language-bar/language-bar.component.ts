@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Snippet } from '../../models/snippet';
 import { Languages } from '../../models/temp-languages.enum';
 
 @Component({
