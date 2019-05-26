@@ -7,6 +7,6 @@
     <app-snippet-adder></app-snippet-adder>
   </div>
   <div *ngFor="let snippet of snippets">
-    <app-snippet-card></app-snippet-card>
+    <app-snippet-card [snippet]="snippet"></app-snippet-card>
   </div>
 </div>
