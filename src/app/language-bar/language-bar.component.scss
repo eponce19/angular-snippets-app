@@ -27,11 +27,28 @@ i {
   overflow: auto;
 }
 
+button{
+  background: none;
+  border: none;
+  font-family: $font-family-header;
+  font-size: $font-size-lg;
+  background-color: $color-base;
+  color: $color-primary;
+  font-weight: $font-bold;
+  padding: .5em;
+  cursor: pointer;
+}
+
 .menu-button {
   background-color: $color-primary;
   color: $color-base;
   border: $color-base solid 2px;
   @include border-radius(100%)
+}
+
+.selected{
+  background-color: rgba(255, 255, 255, 0.3);
+  @include border-radius(0.5em);
 }
 
 #sidebar-container {
@@ -48,4 +65,13 @@ i {
   top: 0;
   right: 0;
   transform: translateX(50%);
+}
+
+#language-list{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p {
+  padding: 1em;
 }

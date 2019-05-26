@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Languages } from '../../models/temp-languages.enum';
 
 @Component({
@@ -8,13 +8,33 @@ import { Languages } from '../../models/temp-languages.enum';
 })
 export class LanguageBarComponent implements OnInit {
 
-  languages = new Set<Languages>();
+  @Output() newSelectionMade = new EventEmitter<Languages>();
+  readonly headerText = 'Select a Language';
+
+  selectedLanguages = new Set<Languages>();
+  languageOptions = new Set<Languages>();
+  showModal = false;
+  newSelection: Languages;
 
   constructor() { }
 
   ngOnInit() {
-    this.languages.add(Languages.typescript);
-    this.languages.add(Languages.css);
+    this.languageOptions.add(Languages.typescript);
+    this.languageOptions.add(Languages.css);
+  }
+
+  updateNewSelection = (lang: Languages) => {
+    this.newSelection = lang;
+  }
+
+  saveLanguage = () => {
+    this.selectedLanguages.add(this.newSelection);
+    this.newSelectionMade.emit(this.newSelection);
+    this.showModal = false;
+  }
+
+  show = () => {
+    this.showModal = true;
   }
 
 }
